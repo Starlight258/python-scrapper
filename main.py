@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, send_file
 from so import get_jobs as so_get_jobs
 from indeed import get_jobs as indeed_get_jobs
 from exporter import save_to_file
+
 app = Flask("JobScrapper")  # 이름
 
 db = {}  # 딕셔너리
